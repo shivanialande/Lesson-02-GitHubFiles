@@ -15,5 +15,6 @@ pipeline{
              steps{
                  sh 'docker build -t shivanialande/nginx:1.0 -f dockerfile'
              }
-     }
+         }
+    }
 }
