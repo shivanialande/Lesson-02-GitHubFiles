@@ -11,5 +11,9 @@ pipeline{
                 sh "mvn clean package"
              } 
          }
+         stage("Building of Docker image"){
+             steps{
+                 sh 'docker build -t shivanialande/nginx:1.0 -f dockerfile'
+             }
      }
 }
