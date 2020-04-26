@@ -13,7 +13,7 @@ pipeline{
          }
          stage("Building of Docker image"){
              steps{
-                 sh 'docker build -t shivanialande/nginx:1.0.0 .'
+                 sh 'docker build -t shivanialande/nginx:1.0.0 https://github.com/shivanialande/Lesson-02-GitHubFiles'
              }
          }
     }
